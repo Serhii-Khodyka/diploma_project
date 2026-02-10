@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Playwright
+pw_profile/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+product_urls.json
+
+# VSCode
+.vscode/

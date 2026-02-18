@@ -4,7 +4,8 @@ import re
 from pathlib import Path
 from playwright.async_api import async_playwright
 
-CATEGORY_URL = "https://rozetka.com.ua/ua/zaryadnie-stantsii-4674585/c4674585/"
+#зарядні станції CATEGORY_URL = "https://rozetka.com.ua/ua/zaryadnie-stantsii-4674585/c4674585/"
+CATEGORY_URL = "https://rozetka.com.ua/ua/mobile-phones/c80003/filter/seller=rozetka/"
 OUT_FILE = "product_urls.json"
 
 def normalize(url: str | None) -> str | None:
@@ -82,7 +83,7 @@ async def main():
                 break
 
             # safety limit
-            if clicks >= 2:
+            if clicks >= 7:
                 break
 
         await browser.close()
